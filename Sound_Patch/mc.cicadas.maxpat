@@ -2,25 +2,62 @@
 	"patcher" : 	{
 		"fileversion" : 1,
 		"appversion" : 		{
-			"major" : 9,
-			"minor" : 0,
-			"revision" : 2,
+			"major" : 8,
+			"minor" : 6,
+			"revision" : 5,
 			"architecture" : "x64",
 			"modernui" : 1
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 34.0, 77.0, 1852.0, 969.0 ],
+		"rect" : [ 134.0, 159.0, 1852.0, 969.0 ],
+		"bglocked" : 0,
+		"openinpresentation" : 0,
+		"default_fontsize" : 12.0,
+		"default_fontface" : 0,
+		"default_fontname" : "Arial",
+		"gridonopen" : 1,
 		"gridsize" : [ 15.0, 15.0 ],
+		"gridsnaponopen" : 1,
+		"objectsnaponopen" : 1,
+		"statusbarvisible" : 2,
+		"toolbarvisible" : 1,
+		"lefttoolbarpinned" : 0,
+		"toptoolbarpinned" : 0,
+		"righttoolbarpinned" : 0,
+		"bottomtoolbarpinned" : 0,
+		"toolbars_unpinned_last_save" : 0,
+		"tallnewobj" : 0,
+		"boxanimatetime" : 200,
+		"enablehscroll" : 1,
+		"enablevscroll" : 1,
+		"devicewidth" : 0.0,
+		"description" : "",
+		"digest" : "",
+		"tags" : "",
 		"style" : "plant",
+		"subpatcher_template" : "",
+		"assistshowspatchername" : 0,
 		"boxes" : [ 			{
+				"box" : 				{
+					"id" : "obj-92",
+					"linecount" : 6,
+					"maxclass" : "comment",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 1526.0, 16.0, 175.0, 87.0 ],
+					"text" : "Code originally from Designing Sound by Andy Nash\n\nPorted from Pure Data, modified, and commented by Aurora Becerra Granados"
+				}
+
+			}
+, 			{
 				"box" : 				{
 					"id" : "obj-116",
 					"linecount" : 2,
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 349.0, 16.0, 66.0, 34.0 ],
+					"patching_rect" : [ 349.0, 16.0, 66.0, 33.0 ],
 					"text" : "number of cicadas"
 				}
 
@@ -40,7 +77,7 @@
 				"box" : 				{
 					"comment" : "",
 					"id" : "obj-111",
-					"index" : 0,
+					"index" : 4,
 					"maxclass" : "inlet",
 					"numinlets" : 0,
 					"numoutlets" : 1,
@@ -98,11 +135,11 @@
 				"box" : 				{
 					"comment" : "",
 					"id" : "obj-94",
-					"index" : 0,
+					"index" : 2,
 					"maxclass" : "inlet",
 					"numinlets" : 0,
 					"numoutlets" : 1,
-					"outlettype" : [ "" ],
+					"outlettype" : [ "setvalue" ],
 					"patching_rect" : [ 291.0, 58.0, 30.0, 30.0 ]
 				}
 
@@ -135,7 +172,7 @@
 				"box" : 				{
 					"comment" : "",
 					"id" : "obj-88",
-					"index" : 0,
+					"index" : 3,
 					"maxclass" : "inlet",
 					"numinlets" : 0,
 					"numoutlets" : 1,
@@ -148,11 +185,11 @@
 				"box" : 				{
 					"comment" : "",
 					"id" : "obj-74",
-					"index" : 0,
+					"index" : 1,
 					"maxclass" : "inlet",
 					"numinlets" : 0,
 					"numoutlets" : 1,
-					"outlettype" : [ "" ],
+					"outlettype" : [ "setvalue" ],
 					"patching_rect" : [ 254.0, 58.0, 30.0, 30.0 ]
 				}
 
@@ -185,7 +222,7 @@
 				"box" : 				{
 					"comment" : "",
 					"id" : "obj-6",
-					"index" : 0,
+					"index" : 1,
 					"maxclass" : "outlet",
 					"numinlets" : 1,
 					"numoutlets" : 0,
@@ -225,7 +262,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 228.0, 326.0, 53.0, 103.0 ],
+					"patching_rect" : [ 228.0, 326.0, 53.0, 100.0 ],
 					"text" : "sounds like it's clipping if high?\nlow sounds noisier"
 				}
 
@@ -238,7 +275,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 752.5, 246.0, 98.0, 52.0 ],
+					"patching_rect" : [ 752.5, 246.0, 98.0, 50.0 ],
 					"text" : "changing filter resonance here makes sound more or less clicky"
 				}
 
@@ -282,7 +319,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 1403.0, 378.0, 85.0, 34.0 ],
+					"patching_rect" : [ 1403.0, 378.0, 85.0, 33.0 ],
 					"text" : "louder clickier signal"
 				}
 
@@ -294,7 +331,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 1290.0, 378.0, 85.0, 34.0 ],
+					"patching_rect" : [ 1290.0, 378.0, 85.0, 33.0 ],
 					"text" : "softer buzzier signal"
 				}
 
@@ -306,7 +343,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 1267.5, 224.0, 210.0, 34.0 ],
+					"patching_rect" : [ 1267.5, 224.0, 210.0, 33.0 ],
 					"text" : "modulation signal:\ncreates short pulses to multiply noise"
 				}
 
@@ -329,7 +366,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 655.5, 382.0, 85.0, 34.0 ],
+					"patching_rect" : [ 655.5, 382.0, 85.0, 33.0 ],
 					"text" : "louder clickier signal"
 				}
 
@@ -341,7 +378,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 537.5, 382.0, 85.0, 34.0 ],
+					"patching_rect" : [ 537.5, 382.0, 85.0, 33.0 ],
 					"text" : "softer buzzier signal"
 				}
 
@@ -383,7 +420,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 529.5, 217.0, 203.0, 34.0 ],
+					"patching_rect" : [ 529.5, 217.0, 203.0, 33.0 ],
 					"text" : "modulation signal:\ncreates short pulses to shape noise"
 				}
 
@@ -406,7 +443,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 772.5, 401.0, 92.592599987983704, 89.0 ],
+					"patching_rect" : [ 772.5, 401.0, 92.592599987983704, 87.0 ],
 					"text" : "filters limit frequency range of noise to between 1000 and 1200 Hz by default"
 				}
 
@@ -418,7 +455,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 803.5, 531.0, 59.0, 34.0 ],
+					"patching_rect" : [ 803.5, 531.0, 59.0, 33.0 ],
 					"text" : "low-pass filters"
 				}
 
@@ -430,7 +467,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 800.5, 336.0, 64.0, 34.0 ],
+					"patching_rect" : [ 800.5, 336.0, 64.0, 33.0 ],
 					"text" : "high-pass filters"
 				}
 
@@ -442,7 +479,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 42.0, 539.0, 59.25926399230957, 34.0 ],
+					"patching_rect" : [ 42.0, 539.0, 59.25926399230957, 33.0 ],
 					"text" : "low-pass filters"
 				}
 
@@ -454,7 +491,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 13.0, 408.0, 92.0, 89.0 ],
+					"patching_rect" : [ 13.0, 408.0, 92.0, 87.0 ],
 					"text" : "filters limit frequency range of noise to between 5000 and 8000 Hz by default"
 				}
 
@@ -466,7 +503,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 41.0, 344.0, 64.0, 34.0 ],
+					"patching_rect" : [ 41.0, 344.0, 64.0, 33.0 ],
 					"text" : "high-pass filters"
 				}
 
@@ -1882,7 +1919,7 @@
 				"patchline" : 				{
 					"destination" : [ "obj-61", 2 ],
 					"midpoints" : [ 1457.0, 201.0, 1502.0, 201.0, 1502.0, 329.0, 1366.0, 329.0 ],
-					"order" : 0,
+					"order" : 1,
 					"source" : [ "obj-59", 0 ]
 				}
 
@@ -1891,7 +1928,7 @@
 				"patchline" : 				{
 					"destination" : [ "obj-62", 2 ],
 					"midpoints" : [ 1457.0, 202.0, 1502.0, 202.0, 1502.0, 279.0, 1365.5, 279.0 ],
-					"order" : 1,
+					"order" : 0,
 					"source" : [ "obj-59", 0 ]
 				}
 
@@ -1900,7 +1937,7 @@
 				"patchline" : 				{
 					"destination" : [ "obj-61", 1 ],
 					"midpoints" : [ 1394.0, 214.0, 1487.0, 214.0, 1487.0, 320.0, 1350.25, 320.0 ],
-					"order" : 0,
+					"order" : 1,
 					"source" : [ "obj-60", 0 ]
 				}
 
@@ -1909,7 +1946,7 @@
 				"patchline" : 				{
 					"destination" : [ "obj-62", 1 ],
 					"midpoints" : [ 1394.0, 214.0, 1487.0, 214.0, 1487.0, 269.0, 1349.75, 269.0 ],
-					"order" : 1,
+					"order" : 0,
 					"source" : [ "obj-60", 0 ]
 				}
 
@@ -2243,9 +2280,6 @@
 
 			}
  ],
-		"originid" : "pat-6",
-		"dependency_cache" : [  ],
-		"autosave" : 0,
 		"styles" : [ 			{
 				"name" : "plant",
 				"default" : 				{
@@ -2271,10 +2305,6 @@
 					"patchlinecolor" : [ 0.52156862745098, 0.592156862745098, 0.490196078431373, 1.0 ],
 					"selectioncolor" : [ 0.905882352941176, 0.796078431372549, 0.635294117647059, 1.0 ],
 					"stripecolor" : [ 0.223529411764706, 0.266666666666667, 0.2, 1.0 ],
-					"syntax_attrargcolor" : [ 0.925490196078431, 0.725490196078431, 0.305882352941176, 1.0 ],
-					"syntax_attributecolor" : [ 0.796078431372549, 0.768627450980392, 0.403921568627451, 1.0 ],
-					"syntax_objargcolor" : [ 0.835294117647059, 0.890196078431372, 0.811764705882353, 1.0 ],
-					"syntax_objectcolor" : [ 0.576470588235294, 0.945098039215686, 0.419607843137255, 1.0 ],
 					"textcolor" : [ 0.137254901960784, 0.184313725490196, 0.117647058823529, 1.0 ],
 					"textcolor_inverse" : [ 0.854901960784314, 0.905882352941176, 0.83921568627451, 1.0 ]
 				}
